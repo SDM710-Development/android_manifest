@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="SDM710-Development/android_device_xiaomi_sirius" path="device/xiaomi/sirius" revision="lineage-18.1" />
+  <project name="SDM710-Development/android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="lineage-18.1" />
+  <project name="SDM710-Development/proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1" />
+  <project name="SDM710-Development/android_kernel_xiaomi_sdm710" path="kernel_xiaomi_sdm710" revision="10.0-caf" />
+</manifest>
