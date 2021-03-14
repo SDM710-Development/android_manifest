@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="SDM710-Development/android_device_xiaomi_sirius" path="device/xiaomi/sirius" revision="lineage-18.1" />
+  <project name="SDM710-Development/android_device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="lineage-18.1" />
+  <project name="SDM710-Development/android_device_xiaomi_grus" path="device/xiaomi/grus" revision="lineage-18.1" />
   <project name="SDM710-Development/android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="lineage-18.1" />
   <project name="SDM710-Development/proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1" />
 </manifest>
