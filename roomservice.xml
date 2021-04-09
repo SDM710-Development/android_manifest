@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="SDM710-Development/android_device_xiaomi_sirius" path="device/xiaomi/sirius" revision="lineage-18.1" />
-  <project name="SDM710-Development/android_device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="lineage-18.1" />
-  <project name="SDM710-Development/android_device_xiaomi_grus" path="device/xiaomi/grus" revision="lineage-18.1" />
-  <project name="SDM710-Development/android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="lineage-18.1" />
-  <project name="SDM710-Development/proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1" />
+  <remote name="aospa-blobs" fetch="https://github.com/ThankYouMario" revision="ruby" />
+  <remote name="crdroid" fetch="https://github.com/crdroidandroid" revision="11.0" />
+  <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
+  <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
+  <remote name="private" fetch="ssh://git@github.com/" />
+  <remote name="dev" fetch="https://github.com/uixdess" revision="dot11" />
+  <remote name="github" fetch="https://github.com/" />
+
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
+  <remove-project name="platform/external/chromium-webview" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="lineage,pdk" clone-depth="1" remote="lineage" revision="master" />
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="android_external_libpng" groups="crdroid,pdk" remote="crdroid" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="android_external_sqlite" groups="crdroid,pdk" remote="crdroid" />
+
+  <remove-project name="android_hardware_qcom_audio" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" groups="lineage,pdk-qcom,qcom,qcom_audio" remote="lineage" revision="lineage-18.1-caf-sdm845" />
+  <remove-project name="android_hardware_qcom_display" />
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display-caf" groups="kud,pdk-qcom,qcom,qcom_display" remote="kud" revision="lineage-18.1/sdm845" />
+  <remove-project name="android_hardware_qcom_media" />
+  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/sdm845" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" groups="lineage,pdk-qcom,qcom" remote="lineage" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" groups="lineage" remote="lineage" />
+
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" groups="lineage" clone-depth="1" remote="lineage" />
+  <remove-project name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
+  <remove-project name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+  <project path="tools/extract-utils" name="android_tools_extract-utils" groups="lineage" remote="lineage" />
+
+  <project path="vendor/extra" name="vendor_extra" groups="dev" remote="dev" revision="android-11.0" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" groups="aospa" clone-depth="1" remote="aospa-blobs" />
+  <project path="vendor/xiaomi" name="SDM710-Development/proprietary_vendor_xiaomi" groups="dev,xiaomi-sdm710" remote="github" revision="lineage-18.1" />
+  <project path="device/xiaomi/sdm710-common" name="android_device_xiaomi_sdm710-common" groups="dev, xiaomi-sdm710" remote="dev" />
+  <project path="device/xiaomi/sirius" name="android_device_xiaomi_sirius" groups="dev, xiaomi-sdm710" remote="dev" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="lineage,qcom,pdk" remote="lineage" />
 </manifest>
