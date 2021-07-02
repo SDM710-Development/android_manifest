@@ -6,4 +6,8 @@
   <project name="SDM710-Development/android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="lineage-18.1-grus-staging" />
   <project name="SDM710-Development/android_kernel_xiaomi_sdm710" path="kernel/xiaomi/sdm710" revision="lineage-18.1-grus-staging" />
   <project name="SDM710-Development/proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1-grus-staging" />
+  <remove-project name="hardware/qcom-caf/sdm845/media" />
+  <project name="KudProject/hardware_qcom_media-caf" path="hardware/qcom-caf/sdm845/media" revision="lineage-18.1/sdm845" />
+  <remove-project name="hardware/qcom-caf/sdm845/display" />
+  <project name="KudProject/hardware_qcom_display-caf" path="hardware/qcom-caf/sdm845/display" revision="lineage-18.1/sdm845" />
 </manifest>
