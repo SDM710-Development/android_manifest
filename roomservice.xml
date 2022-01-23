@@ -10,4 +10,7 @@
   <project name="android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="lineage-18.1" remote="sdm710-dev" />
   <project name="android_kernel_xiaomi_sdm710" path="kernel/xiaomi/sdm710" revision="10.0-caf" remote="sdm710-dev" />
   <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1" remote="sdm710-dev" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom-caf/sdm845/display" revision="lineage-18.1-caf-sdm845" remote="sdm710-dev" />
 </manifest>
